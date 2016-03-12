@@ -1,0 +1,178 @@
+html {
+    /* Apply an image to the entire background */
+    background-color: gray;
+    background: url(/images/WhiteBackground.jpg) no-repeat bottom right fixed;
+    background-size: cover;
+    
+    /* Add vendor specific prefixes for wider support */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+@font-face{ 
+	font-family: 'samba';
+	src: url('samba-webfont.eot');
+	src: url('samba-webfont.eot?iefix') format('eot'),
+	     url('samba-webfont.woff') format('woff'),
+	     url('samba-webfont.ttf') format('truetype'),
+	     url('samba-webfont.svg#webfont') format('svg');
+}
+body {
+  min-width: 300px;
+}
+
+#hero-container {
+  font-size: 10em;
+  font-family: "samba", sans-serif;
+  text-align: right; 
+  margin-right: 30%;
+  white-space: nowrap;
+}
+
+.center{
+  color:gray;
+}
+
+.center-1 {
+  color:darkgray;
+  
+}
+
+.center-2 {
+  color:lightgray;
+}
+
+.space {
+  padding-left: 120px;
+  padding-right: 120px;
+}
+
+#liz-large {
+  position: relative;
+  font-family: "samba", sans-serif;
+  vertical-align:middle;
+  color: darkcyan;
+  right: 159px;
+  top: 370px;  
+}
+
+#brackets-large {
+  margin-top: 50%;
+  font-size: 1.5em;
+  vertical-align:middle;
+  color: darkcyan;
+  margin-left: 0px;
+}
+
+@media only screen and (max-width: 1650px) {
+  #hero-container {
+    font-size: 8em;
+  }
+  
+  #liz-large {
+    right:120px;
+    top: 295px;
+  }
+  
+  .space {
+    padding-right: 90px;
+    padding-left: 90px;
+  }
+}
+
+
+@media only screen and (max-width: 1350px) {
+  #hero-container {
+    font-size: 6.5em;
+  }
+  
+  #liz-large {
+    right:95px;
+    top: 240px;
+  }
+  
+  .space {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  #hero-container {
+    font-size: 5em;
+  }
+  
+  #liz-large {
+    right:77px;
+    top: 186px;
+  }
+  
+  .space {
+    padding-left: 57px;
+    padding-right: 57px;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  #hero-container {
+    font-size: 3.9em;
+  }
+  
+  #liz-large {
+    right:59px;
+    top: 145px;
+  }
+  
+  .space {
+    padding-left: 44px;
+    padding-right: 44px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  #hero-container {
+    font-size: 3.3em;
+    margin-right: 20%;
+  }
+  
+  #liz-large {
+    right:55px;
+    top: 129px;
+  }
+  
+  .space {
+    padding-left: 40px;
+  4padding-right: 30px;
+  }
+  
+  .menu-btn {
+    display:block;
+    top: 20px;
+  }
+  
+  .expand {
+    display: block;
+  }
+
+  .wide-menu {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #hero-container {
+    font-size: 2em;
+    margin-right: 20%;
+  }
+  
+  #liz-large {
+    right:40px;
+    top: 94px;
+  }
+  
+  .space {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}

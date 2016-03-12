@@ -59,120 +59,6 @@ html {
   padding-right: 20px;
 }
 
-.wide-menu a:link, a:visited {
-  text-decoration: none;
-  color:gray;
-}
-
-.wide-menu {
-  position: fixed;
-  right: 5%;
-  top: 20px;
-  display: block; 
-  text-align: right;
-  font-family: "samba", san-serfif;
-  font-size: 2em;
-  padding-top: 5px;
-  color: gray;
-}
-
-
-.menu-btn {
-  position: fixed;
-  right: 10px;
-  top:50px;
-  display:none;
-  width: 70px; 
-}
-
-.menu-btn div {
-	line-height: 1.2;
-	font-size: 18px;
-	font-weight: 200;
-	z-index: 99;
-}
-
-.menu-btn span {
-  display: block;
-	width: 19px;
-	height: 3px;
-	margin: 4px 40px;
-	background: gray;
-	z-index: 99;
-  }
-
-.responsive-menu a:link, a:visited, p {
-  text-decoration: none;
-  color: dimgrey;
-}
-.responsive-menu{
-	display: none;
-}
-
-.responsive-menu p {
-  border-bottom-style: solid;
-  border-width: 2px;
-  border-color: lightgray;
-  padding-bottom: 20px;
-}
-
-
-.expand {
-	display: none; 
-  text-align: center;
-  font-family: "samba", san-serfif;
-  font-size: 1.5em;
-  background: rgba(200,200,200,1);
-  padding-top: 5px;
-  margin-top: 30px;
-
-}
-
-.scroll-words {
-  font-size: 7em;
-  font-family: "samba", sans-serif;
-  margin-top: 96px;
-  text-align: right;
-}
-
-.center{
-  margin-right: 30%;
-  color:gray;
-}
-
-.center-1 {
-  margin-right: 30%;
-  color:darkgray;
-  
-}
-
-.center-2 {
-  margin-right: 30%;
-  color:lightgray;
-}
-
-.space {
-  padding-left: 100px;
-  padding-right: 100px;
-}
-
-#liz-large {
-  font-family: "samba", sans-serif;
-  font-size: 8em;
-  right: 35%;
-  top: 20%;
-  vertical-align:middle;
-  color: darkcyan;
-}
-
-#brackets-large {
-  margin-top: 50%;
-  font-size: 1.5em;
-  vertical-align:middle;
-  color: darkcyan;
-  margin-left: 0px;
-}
-
 @media only screen and (max-width: 1100px) {
   .header {
     font-size: 5.5em;
@@ -191,10 +77,6 @@ html {
     padding-right: 15px;
   }  
     
-  .wide-menu {
-    font-size: 1.5em 
-  }
-  
 }
 
 @media only screen and (max-width: 850px) {
@@ -215,12 +97,9 @@ html {
     padding-right: 11px;
   }
     
-  .wide-menu {
-    font-size: 1.3em 
-  }
-
   
 }
+
 
 @media only screen and (max-width: 650px) {
   .menu-btn {
@@ -236,7 +115,6 @@ html {
     display: none;
   }
   
-
 }
 
 @media only screen and (max-width: 500px) {
@@ -255,8 +133,10 @@ html {
   #logo {
     width: 40px;
   }
-    
+  
   .menu-btn {
+    display:block;
     top: 35px;
   }
+  
 }

@@ -1,6 +1,7 @@
 jQuery(function($){
     	     $( '.menu-btn' ).click(function(){
-    	     $('.responsive-menu').toggleClass('expand')
-    	     })
+                                      console.log("Hello");
+    	                               $('.responsive-menu').toggleClass('expand')
+    	                            })
         })
 
