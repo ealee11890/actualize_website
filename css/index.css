@@ -24,10 +24,9 @@ html {
   margin-left: 50px;
   font-size: 7em;
   font-family: "samba";
-  margin-top: 20px;
-  width: 80%;
+  margin-top: 40px;
+  line-height: 135px
 }
-
 
 .liz{
   font-size: 1em;
@@ -47,9 +46,34 @@ html {
   vertical-align: middle;
 }
 
-a:link, a:visited {
+#sub-header {
+  font-family: "samba", sans-serif;
+  font-size: 2em;
+  color: gray;
+  margin-left: 120px;
+}
+
+#logo {
+  vertical-align: middle;
+  padding-left: 10px;
+  padding-right: 20px;
+}
+
+.wide-menu a:link, a:visited {
   text-decoration: none;
-  color:rgb(50,50,50);
+  color:gray;
+}
+
+.wide-menu {
+  position: fixed;
+  right: 5%;
+  top: 20px;
+  display: block; 
+  text-align: right;
+  font-family: "samba", san-serfif;
+  font-size: 2em;
+  padding-top: 5px;
+  color: gray;
 }
 
 
@@ -77,12 +101,16 @@ a:link, a:visited {
 	z-index: 99;
   }
 
+.responsive-menu a:link, a:visited, p {
+  text-decoration: none;
+  color: dimgrey;
+}
 .responsive-menu{
 	display: none;
 }
 
 .responsive-menu p {
-	border-bottom-style: solid;
+  border-bottom-style: solid;
   border-width: 2px;
   border-color: lightgray;
   padding-bottom: 20px;
@@ -100,63 +128,104 @@ a:link, a:visited {
 
 }
 
-.wide-menu {
-  position: fixed;
-  right: 5%;
-  top: 20px;
-  display: block; 
-  text-align: right;
-  font-family: "samba", san-serfif;
-  font-size: 2em;
-  padding-top: 5px;
-  color: rgb(50,50,50);
-}
-
-#logo {
-  vertical-align: middle;
-  padding-left: 10px;
-  padding-right: 20px;
-}
-
-#sub-header {
+.scroll-words {
+  font-size: 7em;
   font-family: "samba", sans-serif;
-  font-size: 2em;
-  color: gray;
-  margin-left: 100px;
+  margin-top: 96px;
+  text-align: right;
 }
 
-@media only screen and (max-width: 1000px) {
+.center{
+  margin-right: 30%;
+  color:gray;
+}
+
+.center-1 {
+  margin-right: 30%;
+  color:darkgray;
+  
+}
+
+.center-2 {
+  margin-right: 30%;
+  color:lightgray;
+}
+
+.space {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+#liz-large {
+  font-family: "samba", sans-serif;
+  font-size: 8em;
+  right: 35%;
+  top: 20%;
+  vertical-align:middle;
+  color: darkcyan;
+}
+
+#brackets-large {
+  margin-top: 50%;
+  font-size: 1.5em;
+  vertical-align:middle;
+  color: darkcyan;
+  margin-left: 0px;
+}
+
+@media only screen and (max-width: 1100px) {
   .header {
-    font-size: 3.5em;
-    margin-left: 20px;
+    font-size: 5.5em;
+    margin-left: 40px;
+    line-height: 100px;
   }
   
+  #sub-header {
+    font-size: 1.8em;
+    margin-left: 95px;
+  }
+    
+  #logo {
+    width: 70px;
+    padding-left: 7px;
+    padding-right: 15px;
+  }  
+    
   .wide-menu {
     font-size: 1.5em 
   }
   
+}
+
+@media only screen and (max-width: 850px) {
+  .header {
+    font-size: 3.7em;
+    line-height: 70px;
+    margin-left: 25px;
+  }
+  
+  #sub-header {
+    font-size: 1.3em;
+    margin-left: 60px;
+  }
+  
   #logo {
-    width: 70px;
-    padding-left: 10px;
-    padding-right: 15px;
+    width: 55px;
+    padding-left: 5.5px;
+    padding-right: 11px;
+  }
+    
+  .wide-menu {
+    font-size: 1.3em 
   }
 
-  #sub-header {
-    font-size: 1.8em;
-    margin-left: 40px;
-  }
   
 }
 
-@media only screen and (max-width: 500px) {
-  .header {
-    font-size: 2.5em;
-    margin-left: 20px;
-    margin-top: 30px;
-  }
-  
+@media only screen and (max-width: 650px) {
   .menu-btn {
     display:block;
+    top: 68px;
   }
   
   .expand {
@@ -167,15 +236,27 @@ a:link, a:visited {
     display: none;
   }
   
-  #logo {
-    width: 50px;
-    padding-left: 10px;
-    padding-right: 15px;
-  }
 
+}
+
+@media only screen and (max-width: 500px) {
+  .header {
+    font-size: 2.2em;
+    margin-left: 10px;
+    margin-top: 20px;
+    line-height: 50px;
+  }
+  
   #sub-header {
-    font-size: 1.5em;
-    margin-left: 40px;
+    font-size: 1.1em;
+    margin-left: 34px;
   }
-
+  
+  #logo {
+    width: 40px;
+  }
+    
+  .menu-btn {
+    top: 35px;
+  }
 }
