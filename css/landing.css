@@ -138,7 +138,7 @@ body {
   
   #liz-large {
     right:55px;
-    top: 129px;
+    top: 122px;
   }
   
   .space {
@@ -153,6 +153,7 @@ body {
   
   .expand {
     display: block;
+    margin-top: 65px;
   }
 
   .wide-menu {
@@ -168,7 +169,7 @@ body {
   
   #liz-large {
     right:40px;
-    top: 94px;
+    top: 76px;
   }
   
   .space {
