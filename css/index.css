@@ -25,6 +25,7 @@ html {
   font-size: 8em;
   font-family: "samba";
   margin-top: 20px;
+  width: 80%;
 }
 
 
@@ -40,15 +41,66 @@ html {
   font-size: 1em;
   color: gray;
   vertical-align: middle;
+}
 
+.menu-btn {
+  position: fixed;
+  right: 5px;
+  top:50px;
+  
   
 }
 
+.menu-btn div {
+	line-height: 1.2;
+	font-size: 18px;
+	font-weight: 200;
+	z-index: 99;
+}
+
+.menu-btn span {
+  display: block;
+	width: 19px;
+	height: 3px;
+	margin: 4px 40px;
+	background: gray;
+	z-index: 99;
+}
+
+.responsive-menu{
+	display: none;
+}
+
+.responsive-menu p {
+	border-bottom-style: solid;
+  border-width: 2px;
+  border-color: lightgray;
+  padding-bottom: 20px;
+}
 
 
-@media only screen and (max-width: 800px) {
+.expand {
+	display: block !important; 
+  text-align: center;
+  font-family: "samba", san-serfif;
+  font-size: 1.5em;
+  background: rgba(200,200,200,1);
+  padding-top: 5px;
+  
+  
+}
+
+@media only screen and (max-width: 1000px) {
     .header {
         font-size: 3.5em;
         margin-left: 20px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .header {
+        font-size: 2.5em;
+        margin-left: 20px;
+      margin-top: 30px;
     }
 }
