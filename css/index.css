@@ -21,9 +21,10 @@ html {
 
 
 .header {
-  margin-left: 5%;
-  font-size: 10em;
+  margin-left: 50px;
+  font-size: 8em;
   font-family: "samba";
+  margin-top: 20px;
 }
 
 
@@ -43,14 +44,11 @@ html {
   
 }
 
-@media only screen and (max-width: 1000px) {
-    .header {
-        font-size: 7em;
-    }
-}
 
-@media only screen and (max-width: 680px) {
+
+@media only screen and (max-width: 800px) {
     .header {
         font-size: 3.5em;
+        margin-left: 20px;
     }
 }
