@@ -22,7 +22,7 @@ html {
 
 .header {
   margin-left: 50px;
-  font-size: 8em;
+  font-size: 7em;
   font-family: "samba";
   margin-top: 20px;
   width: 80%;
@@ -30,11 +30,15 @@ html {
 
 
 .liz{
-  font-size: 1.6em;
+  font-size: 1em;
   color: darkcyan;
   vertical-align: middle;
+}
 
-
+.brackets {
+  font-size: 1.6em;
+  vertical-align:middle;
+  color: darkcyan;
 }
 
 .title{
@@ -45,7 +49,7 @@ html {
 
 a:link, a:visited {
   text-decoration: none;
-  color:black;
+  color:rgb(50,50,50);
 }
 
 
@@ -105,21 +109,41 @@ a:link, a:visited {
   font-family: "samba", san-serfif;
   font-size: 2em;
   padding-top: 5px;
-  color: darkgray;
+  color: rgb(50,50,50);
 }
 
-.wide-menu a:active {
-  
+#logo {
+  vertical-align: middle;
+  padding-left: 10px;
+  padding-right: 20px;
+}
+
+#sub-header {
+  font-family: "samba", sans-serif;
+  font-size: 2em;
+  color: gray;
+  margin-left: 100px;
 }
 
 @media only screen and (max-width: 1000px) {
   .header {
     font-size: 3.5em;
     margin-left: 20px;
-}
+  }
   
   .wide-menu {
     font-size: 1.5em 
+  }
+  
+  #logo {
+    width: 70px;
+    padding-left: 10px;
+    padding-right: 15px;
+  }
+
+  #sub-header {
+    font-size: 1.8em;
+    margin-left: 40px;
   }
   
 }
@@ -129,7 +153,7 @@ a:link, a:visited {
     font-size: 2.5em;
     margin-left: 20px;
     margin-top: 30px;
-    }
+  }
   
   .menu-btn {
     display:block;
@@ -142,4 +166,16 @@ a:link, a:visited {
   .wide-menu {
     display: none;
   }
+  
+  #logo {
+    width: 50px;
+    padding-left: 10px;
+    padding-right: 15px;
+  }
+
+  #sub-header {
+    font-size: 1.5em;
+    margin-left: 40px;
+  }
+
 }
