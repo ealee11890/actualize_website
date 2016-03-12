@@ -43,12 +43,18 @@ html {
   vertical-align: middle;
 }
 
+a:link, a:visited {
+  text-decoration: none;
+  color:black;
+}
+
+
 .menu-btn {
   position: fixed;
-  right: 5px;
+  right: 10px;
   top:50px;
-  
-  
+  display:none;
+  width: 70px; 
 }
 
 .menu-btn div {
@@ -65,7 +71,7 @@ html {
 	margin: 4px 40px;
 	background: gray;
 	z-index: 99;
-}
+  }
 
 .responsive-menu{
 	display: none;
@@ -80,27 +86,60 @@ html {
 
 
 .expand {
-	display: block !important; 
+	display: none; 
   text-align: center;
   font-family: "samba", san-serfif;
   font-size: 1.5em;
   background: rgba(200,200,200,1);
   padding-top: 5px;
-  
+  margin-top: 30px;
+
+}
+
+.wide-menu {
+  position: fixed;
+  right: 5%;
+  top: 20px;
+  display: block; 
+  text-align: right;
+  font-family: "samba", san-serfif;
+  font-size: 2em;
+  padding-top: 5px;
+  color: darkgray;
+}
+
+.wide-menu a:active {
   
 }
 
 @media only screen and (max-width: 1000px) {
-    .header {
-        font-size: 3.5em;
-        margin-left: 20px;
-    }
+  .header {
+    font-size: 3.5em;
+    margin-left: 20px;
+}
+  
+  .wide-menu {
+    font-size: 1.5em 
+  }
+  
 }
 
 @media only screen and (max-width: 500px) {
-    .header {
-        font-size: 2.5em;
-        margin-left: 20px;
-      margin-top: 30px;
+  .header {
+    font-size: 2.5em;
+    margin-left: 20px;
+    margin-top: 30px;
     }
+  
+  .menu-btn {
+    display:block;
+  }
+  
+  .expand {
+    display: block;
+  }
+
+  .wide-menu {
+    display: none;
+  }
 }
