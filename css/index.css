@@ -1,0 +1,56 @@
+html {
+    /* Apply an image to the entire background */
+    background-color: gray;
+    background: url(/images/WhiteBackground.jpg) no-repeat bottom right fixed;
+    background-size: cover;
+    
+    /* Add vendor specific prefixes for wider support */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+@font-face{ 
+	font-family: 'samba';
+	src: url('samba-webfont.eot');
+	src: url('samba-webfont.eot?iefix') format('eot'),
+	     url('samba-webfont.woff') format('woff'),
+	     url('samba-webfont.ttf') format('truetype'),
+	     url('samba-webfont.svg#webfont') format('svg');
+}
+
+
+.header {
+  margin-left: 5%;
+  font-size: 10em;
+  font-family: "samba";
+}
+
+
+.liz{
+  font-size: 1.6em;
+  color: darkcyan;
+  vertical-align: middle;
+
+
+}
+
+.title{
+  font-size: 1em;
+  color: gray;
+  vertical-align: middle;
+
+  
+}
+
+@media only screen and (max-width: 1000px) {
+    .header {
+        font-size: 7em;
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    .header {
+        font-size: 3.5em;
+    }
+}
